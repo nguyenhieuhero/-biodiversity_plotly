@@ -13,7 +13,7 @@ def ril():
         color_continuous_scale= 'viridis',
         animation_frame='Year',
         hover_name='Entity',
-        width=1400, height=900)
+        width=1000)
     fig.update_layout(
         title='Red List Index (1993 - 2022)',
         xaxis_title='Year',
@@ -23,13 +23,13 @@ def ril():
         cmin=0,
         cmax=1
     )
-    fig2=px.line(df2_pivot,x='Year',y=['World','Guam', 'Niue','Canada','Sri Lanka','China','Vietnam'],width=1400, height=900,markers=True)
+    fig2=px.line(df2_pivot,x='Year',y=['World','Guam', 'Niue','Canada','Sri Lanka','China','Vietnam'],width=1000,markers=True)
     fig2.update_layout(title='Red List Index (1993 - 2022)',
         xaxis_title='Year',
         yaxis_title='Index',
         yaxis=dict(range=[0, 1.0])
         )
-    fig3=px.bar(df2,x="Entity",y="Index",animation_frame="Year",width=1400, height=900)
+    fig3=px.bar(df2,x="Entity",y="Index",animation_frame="Year",width=1000)
     fig3.update_xaxes(
         visible=False
     )

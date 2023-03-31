@@ -9,7 +9,7 @@ def forest_loss():
     data=pd.read_csv(r"data\annual-change-forest-area.csv")
     full=world.merge(data,left_on=["ISO_A3"],right_on=["Code"])
     # print(full)
-    fig = px.choropleth(full,locations="ISO_A3",color="Annual net change in forest area",color_continuous_scale="Viridis",color_continuous_midpoint=0,hover_data=['ADMIN'],width=1400, height=900,animation_frame='Year')
+    fig = px.choropleth(full,locations="ISO_A3",color="Annual net change in forest area",color_continuous_scale="Viridis",color_continuous_midpoint=0,hover_data=['ADMIN'],width=1000,animation_frame='Year')
     fig.update_layout(title=f"Deforestation and Forest Loss")
     # fig.show()
     fig.update_coloraxes(

@@ -15,7 +15,7 @@ def body1():
        dcc.Graph(id='rhino',figure={}),
        html.P("Nạn săn trộm đã đẩy các loài tê giác rất gần với bờ vực tuyệt chủng, trong đó phải kể đến tê giác đen",
               style=P2),
-       html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode()),style={'filter':'drop-shadow(5px 5px 5px white)','width':'1400px'}),
+       html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode()),style={'filter':'drop-shadow(5px 5px 5px white)','width':'1000px'}),
        html.P("Trong những năm gần đây, số lượng tê giác đen trên thế giới có lúc đã xuống tới ngưỡng báo động",
                style=P2),
        dcc.Graph(figure=brhino()),

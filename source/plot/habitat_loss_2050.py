@@ -5,7 +5,7 @@ def hbt_loss():
     df=df.transpose().reset_index()
     df.columns=["Title","Value"]
     df=df.sort_values(by="Value")
-    fig=px.bar(df,x="Value",y="Title",orientation='h',text_auto=True,width=1400, height=900)
+    fig=px.bar(df,x="Value",y="Title",orientation='h',text_auto=True,width=1000)
     fig.update_layout(
         xaxis = dict(
             tickmode = 'array',
